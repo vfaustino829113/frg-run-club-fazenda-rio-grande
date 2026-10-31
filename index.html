@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101211">
+  <meta name="description" content="Corra com a FRG Run Club em Fazenda Rio Grande. Entre para o grupo e venha fazer parte da nossa comunidade.">
+  <title>FRG Run Club — Corre com a gente</title>
+  <style>
+    :root { color-scheme: dark; --lilac: #c5a1ff; --ink: #101211; }
+    * { box-sizing: border-box; }
+    html, body { min-height: 100%; margin: 0; }
+    body {
+      background: var(--ink); color: #f6f7f2; font-family: Inter, "Arial", sans-serif;
+      min-height: 100svh; overflow-x: hidden; overflow-y: auto;
+    }
+    .hero {
+      min-height: 100svh; position: relative; display: flex; flex-direction: column;
+      isolation: isolate; padding: clamp(24px, 5vw, 64px);
+      background: #171b19 url("foto-corrida.jpeg") center 55% / cover no-repeat;
+    }
+    .hero::before { content: ""; position: absolute; inset: 0; z-index: -1;
+      background: linear-gradient(90deg, rgba(8,11,10,.92) 0%, rgba(8,11,10,.72) 44%, rgba(8,11,10,.2) 100%),
+                  linear-gradient(0deg, rgba(8,11,10,.66), transparent 36%); }
+    .topbar { display: flex; justify-content: center; }
+    .brand { display: inline-flex; color: inherit; text-decoration: none; }
+    .brand-logo { display: block; width: clamp(132px, 18vw, 190px); height: auto; }
+    main { flex: 1; display: flex; align-items: center; justify-content: center; }
+    .content { width: min(720px, 100%); padding: 42px 0 54px; display: flex; flex-direction: column; align-items: center; text-align: center; }
+    .eyebrow { color: var(--lilac); font-size: 11px; font-weight: 800; letter-spacing: .2em; text-transform: uppercase; }
+    h1 { margin: 18px 0; max-width: 640px; font-size: clamp(34px, 6.2vw, 68px); line-height: .98;
+      letter-spacing: -.055em; font-weight: 950; text-transform: uppercase; }
+    h1 span { color: var(--lilac); }
+    .intro { max-width: 470px; margin: 0 auto 28px; color: rgba(255,255,255,.88);
+      font-size: clamp(15px, 1.7vw, 18px); line-height: 1.65; }
+    .cta { display: inline-flex; align-items: center; justify-content: center; gap: 13px;
+      min-height: 58px; padding: 0 25px; background: var(--lilac); color: #17121f;
+      border: 0; border-radius: 3px; text-decoration: none; font-size: 12px; font-weight: 900;
+      letter-spacing: .1em; text-transform: uppercase; transition: transform .2s, background .2s; }
+    .cta:hover { transform: translateY(-3px); background: #d9c3ff; }
+    .cta svg { width: 20px; height: 20px; }
+    .note { margin: 13px 0 0; color: rgba(255,255,255,.72); font-size: 12px; text-align: center; }
+    footer { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 9px; color: rgba(255,255,255,.68);
+      font-size: 10px; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; }
+    .footer-tag { color: var(--lilac); }
+    @media (max-width: 600px) {
+      .hero { padding: 24px; background-position: 60% center; }
+      .hero::before { background: linear-gradient(90deg, rgba(8,11,10,.84), rgba(8,11,10,.38)),
+        linear-gradient(0deg, rgba(8,11,10,.72), transparent 60%); }
+      .brand-logo { width: 136px; }
+      .content { padding: 36px 0 42px; }
+      footer { font-size: 9px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <header class="topbar">
+      <a class="brand" href="#inicio" aria-label="FRG Run Club — início">
+        <img class="brand-logo" src="logo-frg-run-club.jpeg" alt="Logo FRG Run Club — Fazenda Rio Grande, PR">
+      </a>
+    </header>
+    <main id="inicio">
+      <section class="content" aria-labelledby="headline">
+        <div class="eyebrow">Fazenda Rio Grande · PR</div>
+        <h1 id="headline">Entre no grupo<br><span>de corrida</span></h1>
+        <p class="intro">Encontre sua turma, compartilhe o caminho e venha correr com a gente.</p>
+        <a class="cta" href="https://chat.whatsapp.com/Fse2zMyBwbzKEg1j39flX8" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.52 3.48A11.86 11.86 0 0 0 12.08 0C5.5 0 .14 5.35.14 11.94c0 2.1.55 4.15 1.6 5.96L0 24l6.25-1.64a11.94 11.94 0 0 0 5.82 1.48h.01c6.58 0 11.94-5.35 11.94-11.94 0-3.19-1.24-6.19-3.5-8.42ZM12.08 21.8a9.9 9.9 0 0 1-5.05-1.38l-.36-.21-3.71.97.99-3.62-.23-.37a9.85 9.85 0 0 1-1.51-5.25c0-5.45 4.43-9.88 9.88-9.88 2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 0 1 2.89 7c0 5.44-4.43 9.87-9.89 9.87Zm5.42-7.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.47-.89-.79-1.49-1.77-1.67-2.07-.17-.3-.02-.46.13-.61.14-.13.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.87 1.22 3.07c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.42.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35Z"/></svg>
+          Entre no grupo
+        </a>
+        <p class="note">Um passo de cada vez. Uma comunidade inteira com você.</p>
+      </section>
+    </main>
+    <footer><span>Fazenda Rio Grande, Paraná</span><span class="footer-tag">Corre no seu ritmo.</span></footer>
+  </div>
+</body>
+</html>
